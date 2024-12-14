@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/genderoutput"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homework1Activity">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="174dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/gender"
+        app:layout_constraintTop_toBottomOf="@+id/enterpassword">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="105dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:text="Gender"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterpassword" />
+
+    <Spinner
+        android:id="@+id/spinnerr"
+        android:layout_width="225dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toEndOf="@+id/country"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="91dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:text="Country"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+    <AutoCompleteTextView
+        android:id="@+id/city"
+        android:layout_width="307dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:hint="Enter City"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerr" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="I agree to terms and conditions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <EditText
+        android:id="@+id/entername"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Enter Full Name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo1" />
+
+     <EditText
+        android:id="@+id/enteremail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entername" />
+
+    <EditText
+        android:id="@+id/enterpassword"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enteremail" />
+
+    <Button
+        android:id="@+id/submit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="21dp"
+        android:text="Submit"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
